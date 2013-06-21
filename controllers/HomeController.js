@@ -4,6 +4,10 @@ var NameSpace1;
         function HomeController($scope) {
             $scope.firstName = "Margarida";
             $scope.lastName = null;
+            $scope.lastName123 = null;
+            $scope.calcular = function () {
+                return $scope.lastName == 'Alberto';
+            };
             $scope.show = function () {
                 var last = $scope.lastName == null ? '!!!!!!!' : ('; ' + $scope.lastName);
                 alert($scope.firstName + last);

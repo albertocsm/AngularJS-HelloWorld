@@ -1,4 +1,5 @@
 /// <reference path="../_definitions/angular.d.ts" />
+/// <reference path="../_definitions/jquery.d.ts" />
 
 
 module NameSpace1 {
@@ -11,7 +12,12 @@ module NameSpace1 {
             ///////////////////inicializar variavel
             $scope.firstName = "Margarida";
             $scope.lastName = null;
+            $scope.lastName123 = null;
 
+
+            $scope.calcular = function () {
+                return $scope.lastName == 'Alberto';
+            }
 
             ///////////////////definir funçao
             $scope.show = function () {
@@ -22,5 +28,9 @@ module NameSpace1 {
             }
 
         }
+
+
     }
+
+
 }

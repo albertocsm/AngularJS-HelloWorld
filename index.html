@@ -15,19 +15,20 @@
             {{firstName}}
         </label>
 
+
         <input type="button" ng-click="show()" value="btn"/>
         <br>
 
-        <!--<input type="text" ng-model="lastName">-->
-        <!--<br/>-->
+        <input type="text" ng-model="lastName">
+        <br/>
 
-        <!--<label>-->
-            <!--{{lastName}}-->
-        <!--</label>-->
+        <label>
+            {{lastName}}
+        </label>
 
-        <!--<div ng-show="lastName.length > 5" style="width:300px; background-color:gold; display: block;">-->
-            <!--{{firstName}}; {{lastName}}-->
-        <!--</div>-->
+        <div ng-show="calcular()" style="width:300px; background-color:gold; display: block;">
+            {{firstName}}; {{lastName}}
+        </div>
 
     </div>
 </form>
